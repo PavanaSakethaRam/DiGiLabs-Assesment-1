@@ -1,12 +1,29 @@
 import "antd/dist/antd.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
+import { useState,useEffect } from "react";
 import { Button } from "antd";
 import { Button as BsButton, Form } from "react-bootstrap";
 import { Select as ChakraSelect } from "@chakra-ui/react";
 
 const LandingPage = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  });
   return (
-    <div className="relative bg-base-white w-[100%] flex flex-col items-start justify-start">
+    <>
+      {windowWidth > 650 ?
+        (
+          <div className="relative bg-base-white w-[100%] flex flex-col items-start justify-start">
       <section className="bg-primary-900 w-[100%] overflow-hidden flex flex-col items-center justify-center text-left text-[52px] text-base-white font-headline-m-desktop-semibold">
         <header className="self-stretch flex flex-row py-5 items-center justify-center z-[1] text-left text-mini text-base-white font-headline-m-desktop-semibold border-b-[1px] border-solid border-primary-400">
           <div className="w-[100%] flex flex-row py-0 px-8 box-border items-center justify-between lg:flex-wrap md:flex-wrap sm:flex-wrap">
@@ -1406,6 +1423,10 @@ const LandingPage = () => {
         </div>
       </footer>
     </div>
+        ) : (
+          <div></div>
+        )}
+    </>
   );
 };
 
