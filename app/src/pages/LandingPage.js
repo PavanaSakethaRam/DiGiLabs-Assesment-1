@@ -8,9 +8,9 @@ const LandingPage = () => {
   return (
     <div className="relative bg-base-white w-[100%] flex flex-col items-start justify-start">
       <section className="bg-primary-900 w-[100%] overflow-hidden flex flex-col items-center justify-center text-left text-[52px] text-base-white font-headline-m-desktop-semibold">
-        <header className="self-stretch flex flex-row py-5 px-40 items-center justify-center z-[1] text-left text-mini text-base-white font-headline-m-desktop-semibold border-b-[1px] border-solid border-primary-400">
-          <div className="w-[100%] flex flex-row py-0 px-8 box-border items-center justify-between">
-            <div className="flex flex-row items-center justify-start gap-[64px]">
+        <header className="self-stretch flex flex-row py-5 items-center justify-center z-[1] text-left text-mini text-base-white font-headline-m-desktop-semibold border-b-[1px] border-solid border-primary-400">
+          <div className="w-[100%] flex flex-row py-0 px-8 box-border items-center justify-between lg:flex-wrap md:flex-wrap sm:flex-wrap">
+            <div className="flex flex-row items-center justify-start gap-[64px] lg:flex-wrap md:flex-wrap sm:flex-wrap">
               <img
                 className="relative w-40 h-10"
                 alt=""
@@ -815,9 +815,9 @@ const LandingPage = () => {
         </div>
       </section>
       <section className="bg-base-white w-[100%] flex flex-col py-16 px-0 box-border items-center justify-center gap-[64px] text-left text-sm text-gray-700 font-headline-m-desktop-semibold">
-        <div className="w-[100%] flex flex-col py-0 px-8 box-border items-center justify-center text-primary-600">
-          <div className="w-[800px] flex flex-col items-center justify-center gap-[8px]">
-            <div className="relative tracking-[-0.1px] leading-[20px] font-semibold hidden">
+        <div className="w-[100%] flex flex-col py-0 px-8 box-border items-center justify-center text-primary-600 lg:flex-wrap md:flex-wrap sm:flex-wrap">
+          <div className="w-[100%] flex flex-col items-center justify-center gap-[8px] lg:flex-wrap md:flex-wrap sm:flex-wrap">
+            <div className="relative tracking-[-0.1px] leading-[20px] font-semibold hidden lg:flex-wrap md:flex-wrap sm:flex-wrap">
               1% OF THE INDUSTRY
             </div>
             <div className="self-stretch flex flex-col items-center justify-start gap-[16px] text-center text-13xl text-gray-700">
@@ -1004,8 +1004,8 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-[100%] flex flex-col py-0 px-8 box-border items-center justify-start flex lg:flex-wrap md:flex-wrap sm:flex-wrap">
-          <div className="self-stretch flex flex-row items-start justify-center gap-[64px] ">
+        <div className="relative w-[100%] flex flex-col py-0 px-8 box-border items-center justify-start flex lg:flex-wrap md:flex-wrap sm:flex-wrap">
+          <div className="relative self-stretch flex flex-row items-start justify-center gap-[64px] lg:flex-wrap md:flex-wrap sm:flex-wrap">
             <img
               className="relative w-32 h-8 overflow-hidden shrink-0"
               alt=""
@@ -1028,7 +1028,7 @@ const LandingPage = () => {
             />
             <img
               className="relative w-32 h-8 overflow-hidden shrink-0"
-              alt=""
+              alt="Hello"
               src="/company-logo9.svg"
             />
             <img
@@ -1069,12 +1069,12 @@ const LandingPage = () => {
       </section>
       <section className="bg-neutral-50 w-[100%] overflow-hidden flex flex-row py-16 px-0 box-border items-center justify-center text-left text-sm text-primary-600 font-headline-m-desktop-semibold">
         <div className="w-[100%] flex flex-col py-0 px-8 box-border items-center justify-center gap-[32px]">
-          <div className="w-[752px] flex flex-col items-center justify-center">
+          <div className="w-[auto] flex flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-start gap-[8px]">
               <div className="relative tracking-[-0.1px] leading-[20px] font-semibold">
                 1% OF THE INDUSTRY
               </div>
-              <div className="w-[752px] flex flex-col items-center justify-start gap-[16px] text-center text-13xl text-gray-700">
+              <div className="w-[auto] flex flex-col items-center justify-start gap-[16px] text-center text-13xl text-gray-700">
                 <h1 className="m-0 self-stretch relative text-[inherit] tracking-[-0.01em] leading-[42px] font-semibold font-inherit text-[inherit]">
                   Welcome to your new digital reality that will rock your world
                   truly at all throughout.
@@ -1093,7 +1093,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="flex flex-col items-center justify-start gap-[32px] text-gray-700">
-            <div className="w-[752px] flex flex-col py-0 px-[120px] box-border items-center justify-start">
+            <div className="w-[auto] flex flex-col py-0 px-[120px] box-border items-center justify-start">
               <div className="self-stretch shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] flex flex-col items-start justify-start gap-[8px]">
                 <div className="self-stretch relative tracking-[-0.1px] leading-[20px] font-medium hidden">
                   Label
@@ -1161,9 +1161,9 @@ const LandingPage = () => {
         </div>
       </section>
       <footer className="bg-gray-950 w-[100%] flex flex-col py-16 px-0 box-border items-center justify-start text-left text-base text-neutral-200 font-headline-m-desktop-semibold">
-        <div className="w-[100%] flex flex-col py-0 px-8 box-border items-start justify-start gap-[48px]">
-          <div className="self-stretch flex flex-row items-start justify-between">
-            <div className="flex flex-col items-start justify-start gap-[16px] text-neutral-800">
+        <div className="w-[100%] flex flex-col py-0 px-8 box-border items-start justify-start gap-[48px] lg:flex-wrap md:flex-wrap sm:flex-wrap">
+          <div className="self-stretch flex flex-row items-start justify-between lg:flex-wrap md:flex-wrap sm:flex-wrap">
+            <div className="flex flex-col items-start justify-start gap-[16px] text-neutral-800 lg:flex-wrap md:flex-wrap sm:flex-wrap">
               <img
                 className="relative w-40 h-10"
                 alt=""
